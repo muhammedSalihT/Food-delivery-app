@@ -329,8 +329,8 @@ class _FilledCartContent extends StatelessWidget {
           padding: const EdgeInsets.only(top: 20, bottom: 20),
           child: Center(
             child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
               onTap: () {
-                Navigator.of(context).maybePop();
                 context.push('/confirm_order');
               },
               child: Container(
